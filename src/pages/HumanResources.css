@@ -1,0 +1,109 @@
+.human_resources {
+    background: #40485A;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    min-height: 100vh;
+}
+
+.human_resources_form {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.human_resources_form>h3 {
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    font-weight: 400;
+    color: #918f84;
+    border-top: 1px solid #918f84;
+    border-bottom: 1px solid #918f84;
+}
+
+.human_resources_form>label {
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    width: 40%;
+    padding: 0;
+    margin: 10px;
+    height: 50px;
+    font-size: 14px;
+}
+
+.human_resources_form>:nth-child(3) {
+    width: 40%;
+}
+
+.human_resources_form>:nth-child(4) {
+    width: 40%;
+}
+
+.human_resources_form>label>input {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 30px;
+    border: 1px solid#918f84;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 14px;
+    color: antiquewhite;
+}
+
+.human_resources_form>select {
+    height: 30px;
+    margin-bottom: 10px;
+    background: #918f84;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 14px;
+    width: 80%
+}
+
+.human_resources_form>select>option {
+    height: 30px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 14px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    width: 40%;
+    margin-left: 10px;
+    color: aliceblue;
+}
+
+.date>input {
+    background: #999b98;
+    height: 30px;
+    color: rgb(224, 229, 233);
+    border: none;
+    font-size: large;
+    font-weight: 300;
+}
+
+.send-btn {
+    width: 50%;
+    height: 35px;
+    background-color: #918f84;
+    color: aliceblue;
+    font-size: large;
+    font-weight: 400;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.send-btn:hover {
+    background-color: aliceblue;
+    color: #000;
+    scale: 1.1;
+}

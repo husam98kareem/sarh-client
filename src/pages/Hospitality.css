@@ -1,0 +1,96 @@
+  .hospitality {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      color: aliceblue;
+  }
+  
+  .card {
+      display: flex;
+      background: #918f84;
+      width: 400px;
+      align-items: center;
+      justify-content: space-around;
+      margin: 10px;
+      border-radius: 10px;
+      padding: 5px,
+  }
+  
+  .info__ {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .hospitality__form {
+      display: flex;
+      flex-direction: column !important;
+      gap: 10px;
+      width: 350px;
+  }
+  
+  .hospitality__form>input {
+      height: 30px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid#918f84;
+      outline: none;
+      color: #fff;
+      font-family: 'Noto Kufi Arabic', sans-serif;
+      font-size: 14px;
+  }
+  
+   ::-webkit-calendar-picker-indicator {
+      cursor: pointer;
+  }
+  
+  .hospitality__form>select {
+      height: 30px;
+      font-family: 'Noto Kufi Arabic', sans-serif;
+      font-size: 14px;
+  }
+  
+  .hospitality__form>select>option {
+      height: 30px;
+  }
+  
+  .hospitality__form>button {
+      height: 30px;
+      background: #918f84;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'Noto Kufi Arabic', sans-serif;
+      margin-top: 10px;
+      border-radius: 10px;
+      height: 40px;
+      transition: all 0.3s ease;
+  }
+  
+  .hospitality__form>button:hover {
+      background: #fff;
+      color: #918f84;
+  }
+  
+  .select {
+      height: 40px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid#918f84;
+      outline: none;
+      color: #918f84;
+  }
+  
+  .select>option {
+      height: 30px;
+  }
+  
+  .vacation {
+      background-color: #918f84;
+      width: 300px;
+      text-align: right;
+      padding: 10px;
+      margin-top: 10px;
+  }

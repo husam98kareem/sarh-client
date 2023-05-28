@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@300;400;500;600&family=Cairo:wght@300;500&family=Noto+Kufi+Arabic:wght@200;300;400&family=Reem+Kufi+Fun:wght@400;500;600;700&display=swap');
+body {
+    margin: 0;
+    background: #40485A;
+    object-fit: cover;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+
+/* https://www.robinwieruch.de/react-router-private-routes/ */

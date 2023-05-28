@@ -1,0 +1,115 @@
+.header {
+    height: 350px;
+    /* background-image: linear-gradient(to left, #4277d8, rgb(234, 213, 174), #4277d8); */
+    width: 100%;
+    /* position: sticky;
+    top: 0; */
+    z-index: 9999;
+    opacity: 1;
+    background-image: url("../assets/patren.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+}
+
+.welcome {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.welcome>p {
+    margin: 0;
+    color: aliceblue;
+}
+
+.logo>img {
+    margin-top: 15px;
+    height: 90px;
+    width: auto;
+    object-fit: cover;
+}
+
+.logout {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 15px;
+    background-color: #918f84;
+    height: 30px;
+    width: 60px;
+    text-align: left;
+    font-weight: 400;
+    padding: 5px 30px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.logout:hover {
+    background-color: #fff;
+    color: #40485A;
+}
+
+.name {
+    color: whitesmoke;
+    height: 60px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.name>h2 {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 9999;
+        opacity: 1;
+        margin-top: 0;
+    }
+    .header__logo {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0px;
+    }
+    .logo>img {
+        width: 120px;
+        height: 70px;
+    }
+    .welcome {
+        /* display: none; */
+        font-size: larger;
+    }
+    .logout {
+        position: static;
+    }
+}

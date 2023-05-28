@@ -1,0 +1,78 @@
+.print_vacation {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.print_vacation>button {
+    position: absolute;
+    bottom: 100px;
+    right: 40px;
+    height: 100px;
+    width: 200px;
+    background-color: rgb(31, 142, 232);
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.print_vacation_paper {
+    width: 750px;
+    /* width: 695px; */
+    height: 1000px;
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 10px;
+}
+
+.print_vacation_paper_detail {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px dashed #a4a1a1; */
+}
+
+.print_vacation_approve {
+    display: flex;
+    gap: 20px;
+}
+
+.print_vacation_employee {
+    border: 1px dashed #a4a1a1;
+    width: 250px;
+    padding-right: 10px;
+}
+
+.print_vacation_section {
+    border: 1px dashed #a4a1a1;
+    width: 250px;
+    padding-right: 10px;
+}
+
+.print_vacation_hr {
+    border: 1px dashed #a4a1a1;
+    width: 250px;
+    padding-right: 10px;
+}
+
+.manager_margin {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 150px;
+    border: 1px dashed #a4a1a1;
+    position: relative;
+}
+
+.manager_margin>p {
+    position: absolute;
+    top: -27px;
+    right: 10px;
+    background-color: aliceblue;
+    padding-left: 10px;
+    padding-right: 10px;
+}

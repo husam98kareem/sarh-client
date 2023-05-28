@@ -1,0 +1,70 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    margin-top: 0;
+}
+
+.login>p {
+    color: #40485A;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.login>h3 {
+    color: #40485A;
+    padding: 0;
+    margin: 0;
+}
+
+.login>input {
+    height: 30px;
+    outline: none;
+    background: transparent;
+    border: none;
+    width: 50%;
+    border-bottom: 1px solid #40485A;
+    font-weight: 400;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    color: #40485A;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input::placeholder {
+    color: #40485A
+}
+
+.login>button {
+    height: 40px;
+    outline: none;
+    background: #40485A;
+    border: none;
+    width: 25%;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    color: #8c9091;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .login>h3,
+    h4 {
+        height: 30px;
+    }
+    .login>p {
+        color: #40485A;
+        font-weight: bold;
+    }
+    .login>input {
+        width: 60%;
+    }
+    .login>button {
+        width: 50%;
+    }
+}
