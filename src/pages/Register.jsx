@@ -7,6 +7,8 @@ import { toast, ToastContainer } from 'react-toastify'
 function Register() {
     const [file, setFile] = useState(null);
     const [img, setImg] = useState("");
+    const [dateOfBirth, setDateOfBirth] = useState(null);
+    const [dateOfStart, setDateOfStart] = useState(null);
     const [surname, setSurname] = useState("Mr");
     const [gender, setGender] = useState("Male")
     const [bloodGroup, setBloodGroup] = useState("+O")
@@ -21,7 +23,7 @@ function Register() {
         const formData = new FormData();
         formData.append('file', file);
         try {
-            const response = await axios.post('http://192.168.88.149:4000/upload', formData)
+            const response = await axios.post('http://192.168.88.144:4000/upload', formData)
             console.log(response.data);
             setImg(response.data)
             toast.success(" تم  رفع الصورة ", {
@@ -43,8 +45,6 @@ function Register() {
         firstName: "",
         middleName: "",
         lastName: "",
-        dateOfBirth: "",
-        dateOfStart: "",
         zipCode: "",
         streetAddress: "",
         mobile: "",
@@ -61,7 +61,7 @@ function Register() {
         e.preventDefault();
         try {
             const response = await axios.post('http://192.168.88.149:4000/api/auth/register',
-                { ...values, surname, img, gender, bloodGroup, company, country, city }
+                { ...values, surname, dateOfBirth, dateOfStart, img, gender, bloodGroup, company, country, city }
             )
             console.log(response.data);
             toast.success(" تم التسجيل بنجاح ", {
@@ -136,8 +136,8 @@ function Register() {
                         <p>Date Of Birth :</p>
                         <input
                             name="dateOfBirth"
-                            value={values.dateOfBirth}
-                            onChange={handleChangeInput}
+                            value={dateOfBirth}
+                            onChange={(e) => setDateOfBirth(e.target.value)} 
                             type="date" />
                     </label>
                     <label>
@@ -172,8 +172,8 @@ function Register() {
                         <input
                             name="dateOfStart"
                             type="date"
-                            value={values.dateOfStart}
-                            onChange={handleChangeInput} />
+                            value={dateOfStart}
+                            onChange={(e) => setDateOfStart(e.target.value)} />
                     </label>
                     <label>
                         <p>Upload Image:</p>
@@ -237,48 +237,6 @@ function Register() {
                     {file && <button onClick={handleSubmitFile} style={{ height: "40px", width: "100px", background: "#40485A", color: "#fff", marginTop: "10px", borderRadius: "5px" }}>Upload</button>}
                 </div>
             </div>
-            {/* <div className='contact_form'>
-                <p>Contact Information</p> */}
-            {/* <form>
-                    <label>Street Address:
-                        <input type="" />
-                    </label>
-
-                    <label>ZIP Code :
-                        <input type="number" />
-                    </label>
-                    <label>Country
-                        <select>
-                            <option>Sarh AL-Warith Company</option>
-                            <option>AL-Munjiz Company</option>
-                        </select>
-                    </label>
-                    <label>State :
-                        <select>
-                            <option>Sarh AL-Warith Company</option>
-                            <option>AL-Munjiz Company</option>
-                        </select>
-                    </label>
-                    <label>City :
-                        <select>
-                            <option>Sarh AL-Warith Company</option>
-                            <option>AL-Munjiz Company</option>
-                        </select>
-                    </label>
-                    <label>Village :
-                        <select>
-                            <option>Sarh AL-Warith Company</option>
-                            <option>AL-Munjiz Company</option>
-                        </select>
-                    </label>
-                    <label>Mobile
-                        <input type="number" />
-                    </label>
-                    <label>
-                        <input type="email" />
-                    </label>
-                </form> */}
-            {/* </div> */}
             <ToastContainer />
         </div>
     )
