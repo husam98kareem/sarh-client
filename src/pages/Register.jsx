@@ -21,7 +21,7 @@ function Register() {
         const formData = new FormData();
         formData.append('file', file);
         try {
-            const response = await axios.post('http://localhost:4000/upload', formData)
+            const response = await axios.post('http://192.168.88.149:4000/upload', formData)
             console.log(response.data);
             setImg(response.data)
             toast.success(" تم  رفع الصورة ", {
@@ -60,7 +60,7 @@ function Register() {
     const handelSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:4000/api/auth/register',
+            const response = await axios.post('http://192.168.88.149:4000/api/auth/register',
                 { ...values, surname, img, gender, bloodGroup, company, country, city }
             )
             console.log(response.data);
